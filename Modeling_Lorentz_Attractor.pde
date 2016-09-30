@@ -28,9 +28,9 @@ void draw() {
  float dy = (x * (rho - z) - y) * dt;
  float dz =(x * y - beta * z) * dt;
  
- x = x + dx;
- y = y + dy;
- z = z + dz; 
+ x += dx;
+ y += dy;
+ z += dz; 
  
  // Add points x, y, z to the array.
  points.add(new PVector (x, y, z) );
